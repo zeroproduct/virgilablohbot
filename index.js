@@ -1,6 +1,3 @@
-// require('babel-core/register');
-// require('babel-polyfill');
-// require('./app');
 var http = require('http');
 var twit = require('twit');
 var config = require('./config.js');
