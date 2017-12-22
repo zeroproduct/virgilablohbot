@@ -53,7 +53,7 @@ var tweetRandom = function() {
               var img = new Image();
               img.src = Buffer.concat(chunks);
               ctx.drawImage(img, 0, 0);
-              ctx.font = '40px Helvetica';
+              ctx.font = 'bold 40px Helvetica';
               ctx.textAlign = 'center';
               ctx.fillStyle = 'white';
               ctx.fillText(
@@ -122,5 +122,5 @@ app.get('/', function(req, res) {
 app.listen(8000, function() {
   console.log('Example app listening on port 8000!');
   tweetRandom();
-  // setInterval(tweetRandom, 1800000);
+  setInterval(tweetRandom, 3600000);
 });
