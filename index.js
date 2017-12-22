@@ -115,16 +115,12 @@ var tweetRandom = function() {
 
 app.get('/', function(req, res) {
   res.send('Hello World!');
-  // setInterval(tweetRandom, 30000);
+  // setInterval(tweetRandom, 1800000);
   tweetRandom();
 });
 
 app.listen(8000, function() {
   console.log('Example app listening on port 8000!');
   tweetRandom();
+  // setInterval(tweetRandom, 1800000);
 });
-
-module.exports = function() {
-  tweetRandom();
-  setInterval(tweetRandom, 1800000);
-};
